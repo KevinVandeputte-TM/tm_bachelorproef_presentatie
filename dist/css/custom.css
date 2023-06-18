@@ -13,11 +13,6 @@ h3 {
   font-weight: 600 !important;
 }
 
-li {
-  font-size: 38px;
-  font-weight: 100 !important;
-}
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -58,6 +53,12 @@ li {
   font-size: var(--r-main-font-size);
   font-weight: normal;
   color: var(--r-main-color);
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
 }
 
 .reveal ::selection {
@@ -229,7 +230,9 @@ li {
 .reveal code {
   font-family: var(--r-code-font);
   text-transform: none;
-  tab-size: 2;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
 }
 
 .reveal pre code {
